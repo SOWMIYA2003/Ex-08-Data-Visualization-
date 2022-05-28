@@ -191,7 +191,8 @@ df4
 
 oe4=OrdinalEncoder()
 oe4.fit_transform(df4[["Sub-Category"]])
-SubCategory=['Binders','Paper','Furnishings','Phones','Storage','Art','Accessories','Chairs','Appliances','Labels','Tables','Envelopes','Bookcases','Fasteners','Supplies','Machines','Copiers']
+SubCategory=['Binders','Paper','Furnishings','Phones','Storage','Art','Accessories''Chairs','Appliances','Labels','Tables','Envelopes','Bookcases'
+,'Fasteners','Supplies','Machines','Copiers']
 enc4=OrdinalEncoder(categories=[SubCategory])
 enc4
 enc4.fit_transform(df4[['Sub-Category']])
@@ -341,7 +342,7 @@ Considers only numeric data that are present in the Dataframe.
 ## Inference(Insights) on DataSet:
 ```
 1.The Overall sale is good in the state of Vermont and Wyoming.
-2.Sale of products such as Machines and Copiers are high and the least selled products are Labels,Fasterners,Art,Paper.
+2.Sale of products such as Machines and Copiers are high and the least sold products are Labels,Fasterners,Art,Paper.
 3.The category Technology yeilds the Maximum profit among Furniture and Office Supplies.
 4.The sale is quite high in South region compared to West,Central and East region.
 5.A high percent of discount is being offered on Furniture products.
