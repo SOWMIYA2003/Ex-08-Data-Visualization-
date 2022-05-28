@@ -202,21 +202,13 @@ df5=df4.copy()
 df5["Sub-Category"]=enc4.fit_transform(df4[["Sub-Category"]])
 df5
 
-#Applying Binary encoding 
-from category_encoders import BinaryEncoder
-be=BinaryEncoder()
-newdata=be.fit_transform(df5["Country"])
-newdata
-df6=df5.copy()
-df6["Country"]=be.fit_transform(df5[["Country"]])
-df6
-
 #Droping non-numeric columns from Dataset
 df5.drop("Order ID",axis=1,inplace = True)
 df5.drop("Order Date",axis=1,inplace = True)
 df5.drop("Ship Date",axis=1,inplace = True)
 df5.drop("Customer ID",axis=1,inplace = True)
 df5.drop("Customer Name",axis=1,inplace = True)
+df5.drop("Country",axis=1,inplace = True)
 df5.drop("City",axis=1,inplace = True)
 df5.drop("Product ID",axis=1,inplace = True)
 df5.drop("Product Name",axis=1,inplace = True)
@@ -225,11 +217,11 @@ df5
 
 #Correlation of columns
 
-df6.corr()
+df5.corr()
 import seaborn as sns
 from matplotlib import pyplot as plt
 plt.subplots(figsize=(12,7))
-sns.heatmap(df6.corr(),annot=True)
+sns.heatmap(df5.corr(),annot=True)
 
 df.corr()
 plt.subplots(figsize=(12,7))
@@ -322,15 +314,15 @@ sns.heatmap(df.corr(),annot=True)
 ## HEAT MAP
 ## Applying Encoding Methods:
 
-Enconding Methods such as Ordinal enconding and Binary encoding have been applied to the given data set inorder to convert the non-numerical data to numerical data.
-Certain Non-numerical Columns (Order ID,Order Date,Ship Date,Customer ID,Customer Name,City,Product ID,Product Name,State.) have been removed from the data set inorder to produce the accurate heatmap.
+Enconding Method such as Ordinal enconding Method is applied to the given data set inorder to convert the non-numerical data to numerical data.
+Certain Non-numerical Columns (Order ID,Order Date,Ship Date,Customer ID,Customer Name,City,Country,Product ID,Product Name,State.) have been removed from the data set inorder to produce the accurate heatmap.
 
 ### DataFrame After applying encoding methods and removal of certain columns:
-![op](./op/q44.png)
+![op](./op/aa3.png)
 ### Correlation of columns:
-![op](./op/q45.png)
+![op](./op/aa1.png)
 ### Graphical Representation to view correlation via HEAT MAP:
-![op](./op/q46.png)
+![op](./op/aa2.png)
 
 ### Initial DataFrame - Without Applying Encoding Methods
 ### Correlation of columns in initial data frame:
