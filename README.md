@@ -322,7 +322,7 @@ sns.heatmap(df.corr(),annot=True)
 Enconding Methods such as Ordinal enconding and Binary encoding have been applied to the given data set inorder to convert the non-numerical data to numerical data.
 Certain Non-numerical Columns (Order ID,Order Date,Ship Date,Customer ID,Customer Name,City,Product ID,Product Name,State.) have been removed from the data set inorder to produce the accurate heatmap.
 
-### DataFrame After applying encoding methods and removal of certain colums:
+### DataFrame After applying encoding methods and removal of certain columns:
 ![op](./op/q44.png)
 ### Correlation of columns:
 ![op](./op/q45.png)
