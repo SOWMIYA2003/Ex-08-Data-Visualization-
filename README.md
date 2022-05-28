@@ -191,7 +191,9 @@ df4
 
 oe4=OrdinalEncoder()
 oe4.fit_transform(df4[["Sub-Category"]])
-SubCategory=['Binders','Paper','Furnishings','Phones','Storage','Art','Accessories''Chairs','Appliances','Labels','Tables','Envelopes','Bookcases'
+SubCategory=['Binders','Paper','Furnishings','Phones',
+'Storage','Art','Accessories','Chairs','Appliances',
+'Labels','Tables','Envelopes','Bookcases'
 ,'Fasteners','Supplies','Machines','Copiers']
 enc4=OrdinalEncoder(categories=[SubCategory])
 enc4
