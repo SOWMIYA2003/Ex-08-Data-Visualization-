@@ -320,7 +320,7 @@ Certain Non-numerical Columns (Order ID,Order Date,Ship Date,Customer ID,Custome
 ### DataFrame After applying encoding methods and removal of certain columns:
 ![op](./op/aa3.png)
 ### Correlation of columns:
-![op](./op/aa1.png)
+![op](./op/aaaa.png)
 ### Graphical Representation to view correlation via HEAT MAP:
 ![op](./op/aa2.png)
 
