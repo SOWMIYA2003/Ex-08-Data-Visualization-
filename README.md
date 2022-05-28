@@ -329,7 +329,7 @@ Certain Non-numerical Columns (Order ID,Order Date,Ship Date,Customer ID,Custome
 ### Graphical Representation to view correlation via HEAT MAP:
 ![op](./op/q46.png)
 
-### Initial DataFrame
+### Initial DataFrame - Without Applying Encoding Methods
 ### Correlation of columns in initial data frame:
 ```
 Considers only numeric data that are present in the Dataframe.
