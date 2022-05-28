@@ -20,6 +20,10 @@ Apply data visualization techniques to identify the patterns of the data.
 ## CODE
 
 ```
+Developed By: Sowmiya N.
+Register No: 212221230106.
+```
+```
 import pandas as pd
 df=pd.read_csv("Superstore.csv")
 df
