@@ -36,7 +36,7 @@ from matplotlib import pyplot as plt
 #LINE PLOT
 
 plt.figure(figsize=(8,5))
-sns.lineplot(x="Sub-Category",y="Sales",data=df,marker='o')
+sns.lineplot(x="Sub-Category",y="Sales",data=df,marker='o'106)
 plt.xticks(rotation = 90)
 
 plt.figure(figsize=(8,5))
@@ -54,7 +54,7 @@ plt.xticks(rotation = 90)
 sns.lineplot(x="Category",y="Discount",data=df,marker='o')
 
 plt.figure(figsize=(12,7))
-sns.lineplot(x="State",y="Sales",data=df,marker='o')
+sns.lineplot(x="State",y="Sales",data=df,marker='o'106)
 plt.xticks(rotation = 90)
 
 #BAR PLOT
