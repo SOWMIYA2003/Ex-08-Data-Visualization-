@@ -143,9 +143,20 @@ sns.kdeplot(x="Sales", data = df,hue='Region')
 sns.kdeplot(x="Discount", data = df,hue='Sub-Category')
 sns.kdeplot(x="Quantity", data = df,hue='Segment')
 
+#PIE CHART
+
+from matplotlib import pyplot as plt
+df.groupby(['Category']).sum().plot(kind='pie', y='Discount',figsize=(6,10),pctdistance=1.7,labeldistance=1.2)
+
+df.groupby(['Sub-Category']).sum().plot(kind='pie', y='Sales',figsize=(10,10),pctdistance=1.7,labeldistance=1.2)
+
+df.groupby(['Region']).sum().plot(kind='pie', y='Profit',figsize=(6,9),pctdistance=1.7,labeldistance=1.2)
+
+df.groupby(['Sub-Category']).sum().plot(kind='pie', y='Quantity',figsize=(9,13),pctdistance=1.7,labeldistance=1.2)
+
+df.groupby(['Ship Mode']).sum().plot(kind='pie', y='Quantity',figsize=(8,11),pctdistance=1.7,labeldistance=1.2)
+
 #HEAT MAP
-
-
 #Applying Ordinal Encoding to convert non-numeric data into numeric.
 
 from sklearn.preprocessing import LabelEncoder, OrdinalEncoder
@@ -203,6 +214,7 @@ df5["Sub-Category"]=enc4.fit_transform(df4[["Sub-Category"]])
 df5
 
 #Droping non-numeric columns from Dataset
+
 df5.drop("Order ID",axis=1,inplace = True)
 df5.drop("Order Date",axis=1,inplace = True)
 df5.drop("Ship Date",axis=1,inplace = True)
@@ -311,6 +323,19 @@ sns.heatmap(df.corr(),annot=True)
 ![op](./op/q42.png)
 ### Quantity VS Segment:
 ![op](./op/q43.png)
+
+## PIE CHART
+### Category VS Discount:
+![op](./op/a41.png)
+### Sub-Category VS Sales:
+![op](./op/a42.png)
+### Region VS Profit:
+![op](./op/a43.png)
+### Sub-Category VS Qunatity:
+![op](./op/a44.png)
+### Ship Mode VS Quantity:
+![op](./op/a45.png)
+
 ## HEAT MAP
 ## Applying Encoding Methods:
 
