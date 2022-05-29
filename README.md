@@ -77,7 +77,7 @@ plt.xticks(rotation = 90)
 
 #HISTOGRAM
 
-sns.histplot(data = df,x = 'Ship Mode',hue='Sub-Category')
+sns.histplot(data = df,x = 'Ship Mode',hue='Sub-Category'106)
 sns.histplot(data = df,x = 'Region',hue='Ship Mode')
 sns.histplot(data = df,x = 'Category',hue='Quantity')
 sns.histplot(data = df,x = 'Sub-Category',hue='Category')
